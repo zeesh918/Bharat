@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Advocate Bharat Sukhwani · quiet luxury law</title>
+  <!-- Tailwind (CDN) + custom stylesheet (below) + Inter & Playfair fonts -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Font Awesome 6 (free) for subtle icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <!-- Google Fonts: serif for headings, sans for body -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <!-- separate CSS file (embedded here for clarity, but also provided as styles.css) -->
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* inline fallback for essential overrides — full set in styles.css */
+  </style>
+</head>
+<body class="bg-primary text-light antialiased">
+
+  <!-- STICKY GLASS NAVIGATION (elegant, minimal) -->
+  <nav class="sticky top-0 z-50 glass-nav px-6 lg:px-12 py-4 flex items-center justify-between">
+    <div class="text-2xl font-serif font-semibold tracking-tight text-light">Adv. Bharat Sukhwani</div>
+    
+    <!-- desktop menu -->
+    <div class="hidden md:flex items-center space-x-10 text-sm font-medium uppercase tracking-wider text-light/80">
+      <a href="#" class="hover:text-accent transition-colors duration-300">Home</a>
+      <a href="#" class="hover:text-accent transition-colors duration-300">About</a>
+      <a href="#" class="hover:text-accent transition-colors duration-300">Practices</a>
+      <a href="#" class="hover:text-accent transition-colors duration-300">Contact</a>
+    </div>
+
+    <!-- call now button (prominent, metallic) + mobile hamburger -->
+    <div class="flex items-center gap-4">
+      <a href="tel:+919876543210" class="hidden md:inline-flex items-center gap-2 border border-accent/40 hover:border-accent bg-accent/10 backdrop-blur-sm px-5 py-2 text-sm font-medium text-accent-light rounded-md transition-all duration-300 group">
+        <i class="fas fa-phone-alt text-accent group-hover:rotate-12 transition"></i> Call Now
+      </a>
+      <!-- mobile hamburger (simple toggle) -->
+      <button id="menuToggle" class="block md:hidden text-2xl text-light focus:outline-none">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+
+    <!-- mobile menu (hidden by default) -->
+    <div id="mobileMenu" class="absolute left-0 right-0 top-full glass-nav py-8 px-6 flex flex-col space-y-6 text-base md:hidden border-t border-white/5 shadow-2xl">
+      <a href="#" class="hover:text-accent transition">Home</a>
+      <a href="#" class="hover:text-accent transition">About</a>
+      <a href="#" class="hover:text-accent transition">Practices</a>
+      <a href="#" class="hover:text-accent transition">Contact</a>
+      <a href="tel:+919876543210" class="inline-flex items-center gap-2 text-accent border border-accent/30 w-fit px-5 py-2 rounded-md"><i class="fas fa-phone-alt"></i> Call Now</a>
+    </div>
+  </nav>
+
+  <!-- HERO SECTION (massive, moody, with overlay) -->
+  <section class="relative min-h-[90vh] flex items-center overflow-hidden">
+    <div class="absolute inset-0 z-0">
+      <img src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?q=80&w=2070&auto=format&fit=crop" alt="Law library dark mood" class="w-full h-full object-cover">
+      <div class="absolute inset-0 bg-primary/70 mix-blend-multiply"></div> <!-- rich dark overlay -->
+    </div>
+    <div class="relative z-10 max-w-7xl mx-auto px-6 lg:px-12 py-24 md:py-32">
+      <span class="inline-block text-accent font-sans text-sm uppercase tracking-[0.3em] mb-6 animate-fade-up">Advocate · Supreme Court of India</span>
+      <h1 class="font-serif text-5xl md:text-7xl lg:text-8xl font-semibold leading-[1.1] text-light max-w-4xl">
+        Quietly <span class="text-accent">Confident.</span> <br>Unwaveringly Prepared.
+      </h1>
+      <p class="font-sans text-light/70 text-lg md:text-xl max-w-2xl mt-8 mb-12">
+        Decades of trusted counsel for the injured, the accused, and the ambitious. Based in Indore, serving across India.
+      </p>
+      <div class="flex flex-wrap gap-5">
+        <a href="tel:+919876543210" class="group bg-accent/90 hover:bg-accent text-primary-dark font-medium px-8 py-4 text-lg rounded-md transition-all flex items-center gap-3 shadow-xl shadow-accent/10">
+          <i class="fas fa-phone-alt"></i> +91 98765 43210
+          <span class="text-sm font-light opacity-80">· immediate consultation</span>
+        </a>
+        <a href="#" class="border border-light/20 hover:border-light/50 text-light px-8 py-4 text-lg rounded-md transition backdrop-blur-sm">Discover more</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- PHILOSOPHY / ABOUT (big whitespace, value proposition) -->
+  <section class="bg-primary-dark py-32 px-6 lg:px-12">
+    <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-20 items-center">
+      <div class="fade-up">
+        <span class="text-accent font-sans text-sm tracking-[0.2em] uppercase">Our philosophy</span>
+        <h2 class="font-serif text-4xl md:text-5xl mt-6 mb-8 text-light">Law is language.<br>We speak it <span class="text-accent italic">fluently</span>.</h2>
+        <p class="text-light/70 text-lg leading-relaxed">
+          Although our chambers are in Indore, we represent clients throughout the nation — including high-stakes matters before the Supreme Court. We don’t chase trends; we master precedent. Every case is approached with surgical precision and quiet intensity.
+        </p>
+        <div class="mt-10 flex items-center gap-6">
+          <div class="w-16 h-px bg-accent/50"></div>
+          <span class="font-serif text-xl text-accent">— Adv. Bharat Sukhwani</span>
+        </div>
+      </div>
+      <div class="grid grid-cols-2 gap-6 fade-up">
+        <div class="bg-primary/50 p-8 rounded-lg border border-white/5">
+          <div class="text-4xl font-serif text-accent">35+</div>
+          <div class="text-sm uppercase tracking-wider text-light/50 mt-2">Years of experience</div>
+        </div>
+        <div class="bg-primary/50 p-8 rounded-lg border border-white/5">
+          <div class="text-4xl font-serif text-accent">2k+</div>
+          <div class="text-sm uppercase tracking-wider text-light/50 mt-2">Matters won</div>
+        </div>
+        <div class="bg-primary/50 p-8 rounded-lg border border-white/5">
+          <div class="text-4xl font-serif text-accent">100%</div>
+          <div class="text-sm uppercase tracking-wider text-light/50 mt-2">Client discretion</div>
+        </div>
+        <div class="bg-primary/50 p-8 rounded-lg border border-white/5">
+          <div class="text-4xl font-serif text-accent">#1</div>
+          <div class="text-sm uppercase tracking-wider text-light/50 mt-2">Indore legal ranking</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRACTICE AREAS (elegant cards, spacious) -->
+  <section class="py-32 px-6 lg:px-12 bg-primary">
+    <div class="max-w-7xl mx-auto">
+      <div class="text-center max-w-2xl mx-auto mb-20 fade-up">
+        <span class="text-accent font-sans text-sm tracking-[0.2em] uppercase">Areas of mastery</span>
+        <h2 class="font-serif text-4xl md:text-5xl mt-4 text-light">The perfect <span class="text-accent">legal</span> architecture</h2>
+      </div>
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- card 1: business law -->
+        <div class="group bg-primary-dark/60 p-8 border border-white/5 hover:border-accent/30 transition-all duration-700 rounded-sm fade-up">
+          <i class="fas fa-building text-3xl text-accent mb-6"></i>
+          <h3 class="font-serif text-2xl mb-3 text-light">Corporate & Commercial</h3>
+          <p class="text-light/50 text-sm leading-relaxed">Be aware of new developments; laws change based on the situation. We keep your business agile.</p>
+          <a href="#" class="inline-block mt-6 text-accent text-sm font-medium group-hover:translate-x-2 transition">View More →</a>
+        </div>
+        <!-- card 2: construction law -->
+        <div class="group bg-primary-dark/60 p-8 border border-white/5 hover:border-accent/30 transition-all duration-700 rounded-sm fade-up">
+          <i class="fas fa-hard-hat text-3xl text-accent mb-6"></i>
+          <h3 class="font-serif text-2xl mb-3 text-light">Construction & Real Estate</h3>
+          <p class="text-light/50 text-sm leading-relaxed">Never judge, just advise — even if the client has made a difficult decision. We build solid ground.</p>
+          <a href="#" class="inline-block mt-6 text-accent text-sm font-medium group-hover:translate-x-2 transition">View More →</a>
+        </div>
+        <!-- card 3: car accident / MACT -->
+        <div class="group bg-primary-dark/60 p-8 border border-white/5 hover:border-accent/30 transition-all duration-700 rounded-sm fade-up">
+          <i class="fas fa-car-crash text-3xl text-accent mb-6"></i>
+          <h3 class="font-serif text-2xl mb-3 text-light">Motor Accident Claims</h3>
+          <p class="text-light/50 text-sm leading-relaxed">Being unthrifty will get you nowhere. We fight for maximum compensation, swiftly.</p>
+          <a href="#" class="inline-block mt-6 text-accent text-sm font-medium group-hover:translate-x-2 transition">View More →</a>
+        </div>
+        <!-- card 4: wrongful death / civil litigation -->
+        <div class="group bg-primary-dark/60 p-8 border border-white/5 hover:border-accent/30 transition-all duration-700 rounded-sm fade-up">
+          <i class="fas fa-gavel text-3xl text-accent mb-6"></i>
+          <h3 class="font-serif text-2xl mb-3 text-light">Civil Litigation</h3>
+          <p class="text-light/50 text-sm leading-relaxed">Keep yourself up‑to‑date on your area of law. Be aware of new justice, as laws and rules evolve.</p>
+          <a href="#" class="inline-block mt-6 text-accent text-sm font-medium group-hover:translate-x-2 transition">View More →</a>
+        </div>
+        <!-- card 5: criminal law -->
+        <div class="group bg-primary-dark/60 p-8 border border-white/5 hover:border-accent/30 transition-all duration-700 rounded-sm fade-up">
+          <i class="fas fa-balance-scale text-3xl text-accent mb-6"></i>
+          <h3 class="font-serif text-2xl mb-3 text-light">Criminal Defense</h3>
+          <p class="text-light/50 text-sm leading-relaxed">Fully committed to providing the support and zealous representation you deserve.</p>
+          <a href="#" class="inline-block mt-6 text-accent text-sm font-medium group-hover:translate-x-2 transition">View More →</a>
+        </div>
+        <!-- card 6: family law -->
+        <div class="group bg-primary-dark/60 p-8 border border-white/5 hover:border-accent/30 transition-all duration-700 rounded-sm fade-up">
+          <i class="fas fa-heart text-3xl text-accent mb-6"></i>
+          <h3 class="font-serif text-2xl mb-3 text-light">Family & Matrimonial</h3>
+          <p class="text-light/50 text-sm leading-relaxed">You may find yourself unable to work or complete responsibilities safely. We handle with care.</p>
+          <a href="#" class="inline-block mt-6 text-accent text-sm font-medium group-hover:translate-x-2 transition">View More →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROMISE / TESTIMONIAL (quiet authority) -->
+  <section class="relative py-36 px-6 lg:px-12 bg-primary-dark overflow-hidden">
+    <div class="absolute top-0 left-0 w-64 h-64 bg-accent/5 rounded-full blur-3xl"></div>
+    <div class="max-w-5xl mx-auto text-center fade-up">
+      <i class="fas fa-quote-right text-6xl text-accent/20 mb-8"></i>
+      <p class="font-serif text-3xl md:text-4xl leading-relaxed text-light/90">
+        “We have helped countless workers and their families go up against the largest offshore companies — and win. Our only loyalty is to the truth of the case.”
+      </p>
+      <div class="mt-12 flex items-center justify-center gap-4">
+        <div class="w-12 h-12 rounded-full bg-accent/20 flex items-center justify-center">
+          <span class="text-accent font-serif text-xl">BS</span>
+        </div>
+        <span class="font-sans text-light/60">— Bharat Sukhwani, Advocate</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER (high-end, contact focus, no email box) -->
+  <footer class="bg-primary-darker pt-28 pb-12 px-6 lg:px-12 border-t border-white/5">
+    <div class="max-w-7xl mx-auto">
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-12">
+        <!-- identity -->
+        <div>
+          <h3 class="font-serif text-2xl text-light mb-4">Adv. Bharat Sukhwani</h3>
+          <p class="text-light/40 text-sm leading-relaxed">Bar Council of Madhya Pradesh · Recognised by the Supreme Court of India</p>
+        </div>
+        <!-- quick links -->
+        <div>
+          <h4 class="font-sans text-sm uppercase tracking-wider text-light/50 mb-5">Explore</h4>
+          <ul class="space-y-3 text-light/70">
+            <li><a href="#" class="hover:text-accent transition">Home</a></li>
+            <li><a href="#" class="hover:text-accent transition">About us</a></li>
+            <li><a href="#" class="hover:text-accent transition">Practice Areas</a></li>
+            <li><a href="#" class="hover:text-accent transition">Contact</a></li>
+          </ul>
+        </div>
+        <!-- contact (call only — no email box) -->
+        <div>
+          <h4 class="font-sans text-sm uppercase tracking-wider text-light/50 mb-5">Call directly</h4>
+          <a href="tel:+919876543210" class="text-3xl font-serif text-accent hover:underline decoration-1 underline-offset-4">+91 98765 43210</a>
+          <p class="text-light/40 text-sm mt-4">24/7 for urgent matters</p>
+          <div class="mt-6">
+            <span class="text-light/30 text-xs block">Also on WhatsApp</span>
+            <a href="#" class="text-accent/70 hover:text-accent"><i class="fab fa-whatsapp text-xl"></i></a>
+          </div>
+        </div>
+        <!-- location (Google Maps link) -->
+        <div>
+          <h4 class="font-sans text-sm uppercase tracking-wider text-light/50 mb-5">Chambers</h4>
+          <address class="not-italic text-light/70 text-sm leading-relaxed">
+            81, 2, YN Rd, near Dena Bank,<br>
+            Indore, Madhya Pradesh 452003<br>
+            <a href="https://maps.app.goo.gl/9PnwYTqJtJ3kKqXS6" target="_blank" class="inline-flex items-center gap-2 mt-4 text-accent border border-accent/20 px-4 py-2 rounded-md hover:bg-accent/5 transition">
+              <i class="fas fa-map-pin"></i> Open in Google Maps
+            </a>
+          </address>
+        </div>
+      </div>
+      <!-- bottom line: copyright & discreet social -->
+      <div class="mt-24 pt-6 flex flex-col md:flex-row justify-between items-center border-t border-white/5 text-light/30 text-sm">
+        <span>© 2025 Adv. Bharat Sukhwani — all rights reserved. quiet luxury legal</span>
+        <div class="flex gap-6 mt-4 md:mt-0">
+          <a href="#" class="hover:text-accent transition"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#" class="hover:text-accent transition"><i class="fab fa-x-twitter"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript for mobile menu + scroll animations (separate file script.js) -->
+  <script src="script.js"></script>
+</body>
+  </html>
