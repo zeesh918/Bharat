@@ -1,0 +1,85 @@
+/* styles.css — quiet luxury palette & animations */
+
+:root {
+  --primary: #0C1A2B;       /* deep rich navy */
+  --primary-dark: #071220;   /* deeper for contrast */
+  --primary-darker: #030a14;
+  --accent: #B89B5B;         /* muted gold / bronze */
+  --accent-light: #D4B87A;
+  --light: #F0F0F0;
+  --light-muted: #B0B0B0;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: var(--primary);
+  color: var(--light);
+}
+
+.font-serif {
+  font-family: 'Playfair Display', serif;
+}
+
+/* glassmorphism nav */
+.glass-nav {
+  background: rgba(7, 18, 32, 0.7);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.03);
+}
+
+/* utility color classes */
+.bg-primary { background-color: var(--primary); }
+.bg-primary-dark { background-color: var(--primary-dark); }
+.bg-primary-darker { background-color: var(--primary-darker); }
+.text-light { color: var(--light); }
+.text-accent { color: var(--accent); }
+.text-accent-light { color: var(--accent-light); }
+.border-accent { border-color: var(--accent); }
+.bg-accent { background-color: var(--accent); }
+.bg-accent\/10 { background-color: rgba(184, 155, 91, 0.1); }
+.bg-accent\/20 { background-color: rgba(184, 155, 91, 0.2); }
+.bg-accent\/90 { background-color: rgba(184, 155, 91, 0.9); }
+.hover\:bg-accent:hover { background-color: var(--accent); }
+.hover\:border-accent:hover { border-color: var(--accent); }
+.border-accent\/30 { border-color: rgba(184, 155, 91, 0.3); }
+.text-primary-dark { color: var(--primary-dark); }
+/* animations */
+.fade-up {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.8s cubic-bezier(0.2, 0.9, 0.3, 1), transform 0.8s cubic-bezier(0.2, 0.9, 0.3, 1);
+}
+
+.fade-up.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* hero image overlay */
+.mix-blend-multiply {
+  mix-blend-mode: multiply;
+}
+
+/* extra spaciousness */
+section, footer {
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+}
+@media (min-width: 768px) {
+  section, footer {
+    padding-top: 9rem;
+    padding-bottom: 9rem;
+  }
+}
+
+/* hover underline etc */
+a, button { transition: all 0.2s ease; }
+
+/* mobile menu hidden by default */
+#mobileMenu {
+  display: none;
+}
+#mobileMenu.open {
+  display: flex;
+}
